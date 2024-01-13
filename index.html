@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav>
+    <div id="special">
+        <img src="image/logo1.png" alt=""><span>.in</span>
+    </div>
+        <div class="deliver">
+            <div>Delivering to delhi 110001</div>
+        <ion-icon name="location-outline"></ion-icon>
+        <span>update location</span>
+    </div>
+    <div class="div">
+    <div class="div-drop">
+        <div id="span" onclick="work()"><span id="data">All</span><ion-icon name="caret-down-outline"></ion-icon></div>
+        <div class="div-drop-down">
+        <ul  id="inner">
+            <li onclick="select()" value="All categories">All categories</li>
+            <li id="li">Alexa Skills</li>
+            <li id="li">Amazon device</li>
+            <li id="li">Amazon fashion</li>
+            <li id="li">Amazon fresh</li>
+            <li id="li">Appliences</li>
+            <li id="li">Amazon pharmacy</li>
+            <li id="li">Apps & Games</li>
+            <li id="li">Beauty</li>
+            <li>Books</li>
+            <li>Cars & Motorbike</li>
+            <li>Clothing & Accessories</li>
+            <!-- <li>home</li>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li> -->
+        </ul>
+    </div>
+    </div>
+    <div>
+    <input type="search" placeholder="Search Amazon.in">
+    </div>
+    <button><ion-icon name="search-outline"></ion-icon></button>
+</div>
+   
+    <div class="lang" >
+        <div onclick="hello()" class="lang-part">
+            <img src="image/india.png" alt="">
+            <span>EN</span>
+            <ion-icon name="caret-down-outline"></ion-icon>
+        </div>
+        <div class="lang-radio" id="get">
+            <div>
+                <input type="radio">
+                <span style="cursor: pointer;">English</span>
+            </div>
+            <div>
+                <input type="radio"><span>Hindi</span>
+            </div>
+            <div>
+                <input type="radio"><span>Tamil</span>
+            </div>
+            <div>
+                <input type="radio"><span>Gujrati</span>
+            </div>
+            <div>
+                <input type="radio"><span>Kochi</span>
+            </div>
+            <div>
+                <input type="radio"><span>Assam</span>
+            </div>
+            <div>
+                <input type="radio"><span>Punjabi</span>
+            </div>
+            <div>
+                <input type="radio"><span>Malyalam</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="account">
+        <span>Hello,sign in</span>
+        <div>
+            <span>Account & list</span>
+            <ion-icon name="caret-down-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="return">
+        <span>Return</span>
+        <div>& Order</div>
+    </div>
+    <div class="cart">
+    <ion-icon name="cart-outline" style="height: 40px; width: 50px;"></ion-icon>
+    <span>cart</span>
+</div>
+    </nav> 
+    <div class="sub-nav">
+        <nav>
+            <ul>
+                <li class="list">
+                    <div  onclick="add()" id="li-div"><ion-icon name="menu-outline" id="ion" ></ion-icon>All</span></div>
+                <div class="list-content" id="add">
+                   <div class="head">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <span>Hello,sign in</span>
+                   </div>
+                   <div class="trending">
+                    <div class="trending-content">
+                        <h3>Trending</h3>
+                        <h4>Best Sellers</h4>
+                        <h4>New Release</h4>
+                        <h4>Movers and shakers</h4>
+                    </div>
+                   
+                   </div>
+                   <div class="digital">
+                    <div class="digital-content">
+                        <h4>Digital content And devices</h4>
+                        <div>
+                            <p>Echo & Alexa</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>Fire tv</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>kindle E-Reader & E-books</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>Audible & Audiobooks</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>Amazon Prime Video</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>Amazon Prime music</p>
+                            <span>></span>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="shop">
+                    <div class="shop-content">
+                        <h4>Shop By categories</h4>
+                        <div>
+                            <p>Mobile, Computer</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>TV, appliances, Electronics</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>Men's fashion</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>Women's fashion</p>
+                            <span>></span>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="program">
+                    <div class="program-content">
+                        <h4>Program & features</h4>
+                        <div>
+                            <p>Amazon Pay</p>
+                        </div>
+                        <div>
+                            <p>Gift Cards & mobiles Recharge</p>
+                            <span>></span>
+                        </div>
+                        <div>
+                            <p>Amazon launchpard</p>
+                            
+                        </div>
+                        <div>
+                            <p>Hnadloom and handicrafts</p>
+                            
+                        </div>
+                    </div>
+                   </div>
+                   <div class="help">
+                    <div class="help-content">
+                        <h4>Help & settings</h4>
+                        <div>
+                            <p>Your Account</p>
+                        </div>
+                        <div>
+                            <p>Customer Services</p> 
+                        </div>
+                        <div>
+                            <p>Sign in</p>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="list-cut">
+                    <div onclick="remove()">
+                        <ion-icon name="close-outline"></ion-icon>
+                </div>
+                </div>
+                
+                    
+                </div>
+                </li>
+                <li>fresh</li>
+                <li>Amazon mini TV</li>
+                <li>sell</li>
+                <li>Best Sellers</li>
+                <li>Today's Deals</li>
+                <li>Mobiles</li>
+                <li>Gift Modes</li>
+                <li>Electronics</li>
+                <li>Prime
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                </li>
+                <li>Custome service</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container" >
+        <div class="container-img" id="main">
+            <img src="image/image1.jpg" alt="" name="image1" style="display: block;">
+            <img src="image/image2.jpg" alt="" name="image2">
+            <img src="image/image3.jpg" alt="" name="image3">
+            <img src="image/image4.jpg" alt="" name="image4">
+            <img src="image/image5.jpg" alt="" name="image5">
+            <img src="image/image6.jpg" alt="" name="image6">
+        </div>
+        <div class="container-btn">
+            <button onclick="pre()"><</button>
+            <button onclick="next()"> ></button>
+        </div>
+    </div>
+    <div class="content">
+    <div class="content-all-card">
+        <div class="content-all-card-card">
+            <h3>Starting ₹99 | Amazon brand & more</h3>
+            <div class="content-all-card-card-img">
+            <div>
+                <img src="image/card1-image1.jpg" alt="">
+                <p>Starting ₹199 | Water bottles</p>
+            </div>
+            <div>
+                <img src="image/card1-image2.jpg" alt="">
+                <p>Starting ₹199 | Storage containers</p>
+            </div>
+            <div>
+                <img src="image/card1-image3.jpg" alt="">
+                <p>Starting ₹199 | Cookware</p>
+            </div>
+            <div>
+                <img src="image/card1-image4.jpg" alt="">
+                <p>Starting ₹199 | Racks & holders</p>
+            </div>
+        </div>
+        <a href="#">See more</a>
+        </div> 
+        <div class="content-all-card-card">
+            <h3>Starting ₹99 | All your home improvement needs</h3>
+            <div class="content-all-card-card-img">
+            <div>
+                <img src="image/card2-image1.jpg" alt="">
+                <p>Cleaning Spin mops, wipes & more</p>
+            </div>
+            <div>
+                <img src="image/card2-image2.jpg" alt="">
+                <p>Bathroom hardware & accessories</p>
+            </div>
+            <div>
+                <img src="image/card2-image3.jpg" alt="">
+                <p>Hand tools
+                    Hammers, screwdrivers & more</p>
+            </div>
+            <div>
+                <img src="image/card2-image4.jpg" alt="">
+                <p>Extension boards, plugs & more</p>
+            </div>
+        </div>
+        <a href="#">Explore All</a>
+        </div> 
+        <div class="content-all-card-card">
+            <h3>UP to 60% off | styles for men</h3>
+            <div class="content-all-card-card-img">
+            <div>
+                <img src="image/card3-image1.jpg" alt="">
+                <p>Clothing</p>
+            </div>
+            <div>
+                <img src="image/card3-image2.jpg" alt="">
+                <p>Footwear</p>
+            </div>
+            <div>
+                <img src="image/card3-image3.jpg" alt="">
+                <p>Watches</p>
+            </div>
+            <div>
+                <img src="image/card3-image4.jpg" alt="">
+                <p>Bags & Wallets</p>
+            </div>
+        </div>
+        <a href="#">End of season sale</a>
+        </div>    
+        <div class="content-all-card-card">
+            <h3>UP to 75% off | Headphone</h3>
+            <div class="content-all-card-card-img">
+            <div>
+                <img src="image/card4-image1.jpg" alt="">
+                <p>Up to 75% off | boat</p>
+            </div>
+            <div>
+                <img src="image/card4-image2.jpg" alt="">
+                <p>Up to 75% off | boult</p>
+            </div>
+            <div>
+                <img src="image/card4-image3.jpg" alt="">
+                <p>Up to 75% off | Noise</p>
+            </div>
+            <div>
+                <img src="image/card4-image4.jpg" alt="">
+                <p>Up to 75% off | Zebronics</p>
+            </div>
+        </div>
+        <a href="#">See all offers</a>
+        </div> 
+        <div class="content-all-card-card">
+            <h3>Appliances for your home | Up to 55% off</h3>
+            <div class="content-all-card-card-img">
+            <div>
+                <img src="image/appliances1.jpg" alt="">
+                <p>Air Conditioners</p>
+            </div>
+            <div>
+                <img src="image/appliances2.jpg" alt="">
+                <p>Refrigerator</p>
+            </div>
+            <div>
+                <img src="image/appliances3.jpg" alt="">
+                <p>Microwaves</p>
+            </div>
+            <div>
+                <img src="image/appliances4.jpg" alt="">
+                <p>Washing machine</p>
+            </div>
+        </div>
+        <a href="#">See more</a>
+        </div> 
+        <div class="content-all-card-card">
+            <h3>Baby essentials & toys | Amazon Brands & more</h3>
+            <div class="content-all-card-card-img">
+            <div>
+                <img src="image/baby1.jpg" alt="">
+                <p>Starting ₹179 | Diapers & wipes</p>
+            </div>
+            <div>
+                <img src="image/baby2.jpg" alt="">
+                <p>Up to 60% off | Baby cardels & more</p>
+            </div>
+            <div>
+                <img src="image/baby3.jpg" alt="">
+                <p>Starting ₹299 | Soft toys & Indoor games</p>
+            </div>
+            <div>
+                <img src="image/baby4.jpg" alt="">
+                <p>Minimum 40% off | Outdoor games</p>
+            </div>
+        </div>
+        <a href="#">See more</a>
+        </div> 
+        <div class="content-all-card-card">
+            <h3>Automotive essentials | Up to 60% off</h3>
+            <div class="content-all-card-card-img">
+            <div>
+                <img src="image/car1.jpg" alt="">
+                <p>Cleaning Accessories</p>
+            </div>
+            <div>
+                <img src="image/car2.jpg" alt="">
+                <p>Try & rim care</p>
+            </div>
+            <div>
+                <img src="image/helmet.jpg" alt="">
+                <p>Helmets</p>
+            </div>
+            <div>
+                <img src="image/car3.jpg" alt="">
+                <p>vaccum cleaner</p>
+            </div>
+        </div>
+        <a href="#">See more</a>
+        </div> 
+        <div class="content-all-card-card">
+            <h3>Up to 60% off | Styles for women</h3>
+            <div class="content-all-card-card-img">
+            <div>
+                <img src="image/women1.jpg" alt="">
+                <p>Women Clothing</p>
+            </div>
+            <div>
+                <img src="image/women2.jpg" alt="">
+                <p>Footwear + Handbags</p>
+            </div>
+            <div>
+                <img src="image/women3.jpg" alt="">
+                <p>Watches</p>
+            </div>
+            <div>
+                <img src="image/women4.jpg" alt="">
+                <p>Fashion Jewellery</p>
+            </div>
+        </div>
+        <a href="#">End of season</a>
+        </div> 
+    </div>
+    <div class="content-today-deal">
+            <div class="content-today-deal-head">
+                <h2>Today's Deal</h2>
+                <a href="#">See all orders</a>
+            </div>
+        <div class="content-today-deal-content-sub" id="main1">
+            <div class="content-today-deal-content-sub-div1">
+                <div class="content-today-deal-content-sub-div1-card">
+                    <div class="content-today-deal-content-sub-div1-card-header">
+                        <img src="image/powder.png" alt="">
+                    </div>
+                    <div class="content-today-deal-content-sub-div1-card-footer">
+                    <button>Up to 25% off</button>
+                    <span>Deal of the day</span>
+                    <p>Great deals on health and sports support...</p>
+                </div>
+                </div>
+                <div class="content-today-deal-content-sub-div1-card">
+                    <div class="content-today-deal-content-sub-div1-card-header">
+                        <img src="image/dhosa.png" alt="">
+                    </div>
+                    <div class="content-today-deal-content-sub-div1-card-footer">
+                    <button>Up to 50% off</button>
+                    <span>Deal of the day</span>
+                    <p>Cookware,plots & pans from top brands</p>
+                </div>
+                </div>
+                <div class="content-today-deal-content-sub-div1-card">
+                    <div class="content-today-deal-content-sub-div1-card-header">
+                        <img src="image/socket.png" alt="">
+                    </div>
+                    <div class="content-today-deal-content-sub-div1-card-footer">
+                    <button>Up to 95% off</button>
+                    <span>Deal of the day</span>
+                    <p>Travel Adapters And Electronics Accesses</p>
+                </div>
+                </div>
+                <div class="content-today-deal-content-sub-div1-card">
+                    <div class="content-today-deal-content-sub-div1-card-header" style="padding: 2px;">
+                        <img src="image/temple.png" alt="">
+                    </div>
+                    <div class="content-today-deal-content-sub-div1-card-footer">
+                    <button>Up to 39% off</button>
+                    <span>Deal of the day</span>
+                    <div>
+                        <span>₹1,299.00</span>
+                    <span>M.R.P : <span id="cut">₹1,299.00</span></span>
+                    <p>Deal of the Day on Home Temple 3D</p>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="content-today-deal-content-sub-div1-card">
+                    <div class="content-today-deal-content-sub-div1-card-header">
+                        <img src="image/creatine.png" alt="">
+                    </div>
+                    <div class="content-today-deal-content-sub-div1-card-footer">
+                    <button>Up to 95% off</button>
+                    <span>Deal of the day</span>
+                    <p>Travel Adapters And Electronics Accesses</p>
+                </div>
+                </div>
+            </div>
+        <div class="content-today-deal-content-sub-div2">
+            <div class="content-today-deal-content-sub-div2-card">
+                <div class="content-today-deal-content-sub-div2-card-header">
+                    <img src="image/shoes.png" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div2-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+            <div class="content-today-deal-content-sub-div2-card">
+                <div class="content-today-deal-content-sub-div2-card-header">
+                    <img src="image/hand.png" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div2-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+            <div class="content-today-deal-content-sub-div2-card">
+                <div class="content-today-deal-content-sub-div2-card-header">
+                    <img src="image/bath-hardware.jpg" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div2-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+            <div class="content-today-deal-content-sub-div2-card">
+                <div class="content-today-deal-content-sub-div2-card-header">
+                    <img src="image/shampoo.jpg" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div2-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+            <div class="content-today-deal-content-sub-div2-card">
+                <div class="content-today-deal-content-sub-div2-card-header">
+                    <img src="image/knife.png" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div2-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+        </div>
+        <div class="content-today-deal-content-sub-div3">
+            <div class="content-today-deal-content-sub-div3-card">
+                <div class="content-today-deal-content-sub-div3-card-header">
+                    <img src="image/gym.png" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div3-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+            <div class="content-today-deal-content-sub-div3-card">
+                <div class="content-today-deal-content-sub-div3-card-header">
+                    <img src="image/spoon.png" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div3-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+            <div class="content-today-deal-content-sub-div3-card">
+                <div class="content-today-deal-content-sub-div3-card-header">
+                    <img src="image/formal.png" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div3-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+            <div class="content-today-deal-content-sub-div3-card">
+                <div class="content-today-deal-content-sub-div3-card-header">
+                    <img src="image/hardware.png" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div3-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+            <div class="content-today-deal-content-sub-div3-card">
+                <div class="content-today-deal-content-sub-div3-card-header">
+                    <img src="image/tshirt.png" alt="">
+                </div>
+                <div class="content-today-deal-content-sub-div3-card-footer">
+                <button>Up to 25% off</button>
+                <span>Deal of the day</span>
+                <p>Great deals on health and sports support...</p>
+            </div>
+            </div>
+    <!-- <button onclick="work1()">click</button> -->
+        </div>      
+        <div class="content-today-deal-content-sub-btn">
+            <button><</button>
+            <button>></button>
+        </div>
+        </div> 
+    </div>
+    <div class="content-best-seller">
+        <div class="content-best-seller-head">
+        <h3>Starting ₹999 | Bestselling smartwatches from top brands</h3>
+        <span>
+            <a href="#">See all offers</a>
+        </span>
+    </div>
+        <div class="content-best-seller-content">
+            <div class="content-best-seller-content-div1">
+                <img src="image/watch1.png" alt="">
+                <img src="image/watch2.png" alt="">
+                <img src="image/watch3.png" alt="">
+                <img src="image/watch4.png" alt="">
+                <img src="image/watch5.png" alt="">
+                <img src="image/watch6.png" alt="">
+                <img src="image/watch7" alt="">
+            </div>
+            <div class="content-best-seller-content-div2">
+                <img src="image/watch8.png" alt="">
+                <img src="image/watch9.png" alt="">
+                <img src="image/watch10.png" alt="">
+                <img src="image/watch11.png" alt="">
+                <img src="image/watch12.png" alt="">
+                <img src="image/watch5.png" alt="">
+                <img src="image/watch7" alt="">
+            </div>
+            <div class="content-best-seller-content-div3">
+                <img src="image/watch4.png" alt="">
+                <img src="image/watch3.png" alt="">
+                <img src="image/watch10.png" alt="">
+                <img src="image/watch11.png" alt="">
+                <img src="image/watch7.png" alt="">
+                <img src="image/watch1.png" alt="">
+                <img src="image/watch12" alt="">
+            </div>
+    </div>
+    </div>
+    <div class="content-electronics-card">
+        <div class="content-electronics-card-div1">
+            <div class="content-electronics-card-div1-head">
+                <h3>Starting ₹5,499 | Deals on TVs for every budget</h3>
+            </div>
+            <div class="content-electronics-card-div1-content">
+                <div>
+                    <img src="image/electronics-card1-image1.jpg" alt="">
+                    <p>TVs under ₹15,000 | Up to 50% off</p>
+                </div>
+                <div>
+                    <img src="image/electronics-card1-image2.jpg" alt="">
+                    <p>TVs in price range of ₹15,000 - ₹30,000</p>
+                </div>
+                <div>
+                    <img src="image/electronics-card1-image3.jpg" alt="">
+                    <p>TVs in price range of ₹30,000 - ₹50,000</p>
+                </div>
+                <div>
+                    <img src="image/electronics-card1-image4.jpg" alt="">
+                    <p>TVs under ₹50,000 | Up to 65% off</p>
+                </div>
+            </div>
+            <a href="#">See all orders</a>
+        </div>
+        <div class="content-electronics-card-div2">
+          <h3>Up to 70% off | International brands</h3>  
+          <img src="image/electronics-card2-image.jpg" alt="">
+          <a href="#">See all offers</a>
+        </div>
+        <div class="content-electronics-card-div3">
+            <h3>Up to 70% off | Refurbished Products</h3>
+            <img src="image/electronics-card3-image.jpg" alt="">
+            <a href="#">See all offers</a>
+        </div>
+        <div class="content-electronics-card-div4">
+            <h3>Up to 10% cashback on business purchases</h3>
+            <img src="image/electronics-card4-image.jpg" alt="">
+            <a href="#">Register fro free</a>
+        </div>
+       
+    </div>
+    <div class="content-flight">
+        <div class="content-flight-content">
+            <div class="content-flight-content-img">
+              
+            </div>
+        </div>   
+    </div>
+    <div class="content-california">
+        <div class="content-california-img">
+        
+        </div>
+    </div>
+    <div class="content-shop-card">
+        <div class="content-shop-card-div1">
+            <h3>Up to 40% off | Deals on mobiles and accessories</h3>  
+            <img src="image/shop-card1-image.jpg" alt="">
+            <a href="#">See all offers</a>
+        </div>
+        <div class="content-shop-card-div2">
+            <h3>Buy 2 Get 10% off, freebies & more offers</h3>  
+            <img src="image/shop-card2-image.jpg" alt="">
+            <a href="#">See all offers</a>
+        </div>
+        <div class="content-shop-card-div3">
+            <div class="content-shop-card-div3-head">
+                <h3>Shoes, jewellery & more | Starting ₹199</h3>
+            </div>
+            <div class="content-shop-card-div3-content">
+                <div>
+                    <img src="image/shop-card3-image1.jpg" alt="">
+                    <p>Sport Shoes</p>
+                </div>
+                <div>
+                    <img src="image/shop-card3-image2.jpg" alt="">
+                    <p>Jewellery & Accessories</p>
+                </div>
+                <div>
+                    <img src="image/shop-card3-image3.jpg" alt="">
+                    <p>Watches & smartwatches</p>
+                </div>
+                <div>
+                    <img src="image/shop-card3-image4.jpg" alt="">
+                    <p>Bags, Wallets & Luggage</p>
+                </div>
+            </div>
+            <a href="#">See all orders</a>
+        </div>
+        <div class="content-shop-card-div4">
+            <div class="content-shop-card-div4-head">
+                <h3>Minimum 60% off | Deals on top brands</h3>
+            </div>
+            <div class="content-shop-card-div4-content">
+                <div>
+                    <img src="image/shop-card4-image1.jpg" alt="">
+                    <p>Tops & tees</p>
+                </div>
+                <div>
+                    <img src="image/shop-card4-image2.jpg" alt="">
+                    <p>Kurtas & kurtis</p>
+                </div>
+                <div>
+                    <img src="image/shop-card4-image3.jpg" alt="">
+                    <p>Dresses & jumpsuits</p>
+                </div>
+                <div>
+                    <img src="image/shop-card4-image4.jpg" alt="">
+                    <p>Sarees</p>
+                </div>
+            </div>
+            <a href="#">See all deals</a>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer-sign-in">
+            <h5>See personalized recomendations</h5>
+            <button>Sign in</button>
+            <div>
+                <h6>New Customer?</h6>
+                <a href="#">Start here</a>
+            </div>
+        </div>
+        <div class="footer-details">
+            <div class="footer-details-header">
+                <h3>Back to top</h3>
+            </div>
+            <div class="footer-details-content">
+                <div class="footer-details-content-get">
+                <h5>Get to known us</h5>
+                <ul>
+                    <li>About us</li>
+                    <li>career</li>
+                    <li>Press Release</li>
+                    <li>Amazon Science</li>
+                </ul>
+                </div>
+                <div class="footer-details-content-connect">
+                    <h5>Connect with us</h5>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                <div class="footer-details-content-money">
+                    <h5>Make money with us</h5>
+                    <ul>
+                        <li>Sell on amazon</li>
+                        <li>Sell under amazon accelerator</li>
+                        <li>Protect and build Your brand</li>
+                        <li>Amazon Global selling</li>
+                        <li>become an Affilate</li>
+                        <li>Fulfilment by amazon</li>
+                        <li>Adversite Your product</li>
+                        <li>Amazon pay on payment</li>
+                    </ul>
+                </div>
+                <div class="footer-details-content-help">
+                    <h5>Let us help on</h5>
+                    <ul>
+                        <li>COVID-19and Amazon</li>
+                        <li>Your Account</li>
+                        <li>Returns Center</li>
+                        <li>100% Purchase Protection</li>
+                        <li>Amazon App download</li>
+                        <li>help</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-details-country">
+                <div class="footer-details-country-head">
+                    <img src="image/logo1.png" alt="hello">
+                    <div id="btn">
+                        <ion-icon name="globe-outline"></ion-icon>
+                        <span>English</span>
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="footer-details-country-footer">
+                    <a href="#">Australia</a>
+                    <a href="#">Brazil</a>
+                    <a href="#">Canada</a>
+                    <a href="#">france</a>
+                    <a href="#">Germany</a>
+                    <a href="#">italy</a>
+                    <a href="#">japan</a>
+                    <a href="#">mexico</a>
+                    <a href="#">netherlands</a>
+                    <a href="#">poland</a>
+                    <a href="#">singapore</a>
+                    <a href="#">spain</a>
+                    <a href="#">Turkey</a>
+                    <a href="#">United Arab Emirates</a>
+                    <a href="#">United kingdom</a>
+                    <a href="#">united states</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-last">
+            <div class="footer-last-content">
+                <div class="footer-last-content-part1">
+                    <div>
+                        <a href="#">AbeBooks
+                            Books, art
+                            & collectibles</a>
+                    </div>
+                    <div>
+                        <a href="#">Amazon Web Services
+                            Scalable Cloud
+                            Computing Services</a>
+                    </div>
+                    <div>
+                        <a href="#">Audible
+                            Download
+                            Audio Books</a>
+                    </div>
+                    <div>
+                            <a href="#">IMDb
+                                Movies, TV
+                                & Celebrities</a>
+                        
+                    </div>
+                </div>
+                <div class="footer-last-content-part2">
+                    <div>
+                        <a href="#">Shopbop
+                            Designer
+                            Fashion Brands</a>
+                    </div>
+                    <div>
+                        <a href="#">Amazon bussiness Everthing for your bussiness</a>
+                    </div>
+                    <div>
+                        <a href="#">Prime Now
+                            2-Hour Delivery
+                            on Everyday Items</a>
+                    </div>
+                    <div>
+                        <a href="#">Amazon Prime Music
+                            100 million songs, ad-free
+                            Over 15 million podcast episodes</a>                    
+                    </div>
+                </div>
+                <div class="footer-last-content-part3">
+                    <a href="#">condition of use of & sales</a>
+                    <a href="#">privacy notes</a>
+                    <a href="#">internet based ads</a>
+                    <p>1996-2024, Amazon.com, Inc or its Affilates</p>
+                </div>
+        </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
